@@ -489,6 +489,7 @@
             padding: 10px;
             border-radius: var(--border-radius);
             cursor: pointer;
+            z-index: 99999;
         }
 
         @media (max-width: 768px) {
@@ -781,7 +782,7 @@
     <section id="contact" class="contact fade-in">
         <div class="container">
             <h2>Contact Me</h2>
-         
+              <p> E- mail : angelgupta.dev@gmail.com </p>
             <div class="links">
                 <a href="mailto:angelgupta.dev@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
                 <a href="https://github.com/angel-0210" class="btn"><i class="fab fa-github"></i> GitHub</a>
@@ -793,11 +794,21 @@
     </section>
 
     <script>
+//theme
         function toggleTheme() {
             const body = document.body;
-            const theme = body.getAttribute('data-theme');
-            body.setAttribute('data-theme', theme === 'dark')
+            const btnIcon = document.querySelector(".theme-toggle i");
+            const isDark = body.getAttribute("data-theme") === "dark";
+
+            if (isDark) {
+                body.setAttribute("data-theme", "light");
+                btnIcon.className = "fas fa-moon";
+            } else {
+                body.setAttribute("data-theme", "dark");
+                btnIcon.className = "fas fa-sun";
+            }
         }
+//carousel
 document.querySelectorAll('.carousel').forEach(carousel => {
     const track = carousel.querySelector('.carousel-track');
     const slides = carousel.querySelectorAll('.carousel-slide');
