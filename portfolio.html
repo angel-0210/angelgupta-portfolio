@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Gupta - Android Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4B7BEC;
+            --secondary-color: #ffffff;
+            --accent-color: #f0f0f0;
+            --text-color: #333333;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+            --spacing: 20px;
+        }
+
+        [data-theme="dark"] {
+            --secondary-color: #1a1a1a;
+            --accent-color: #2a2a2a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        section {
+            padding: 80px 0;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing);
+            box-shadow: var(--shadow);
+            background-color: var(--accent-color);
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: var(--spacing);
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: var(--spacing);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), #6c5ce7);
+            color: var(--secondary-color);
+            padding: 120px 0;
+            border-radius: var(--border-radius);
+        }
+
+        .hero h1 {
+            margin-bottom: 10px;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .about-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  padding-left: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  padding-left: 40px;
+}
+
+/* .about-text h2 {
+  color: #007BFF;
+} */
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-left: 5px;
+    padding-top: 20px;
+  }
+}
+
+        /* .about {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow);
+        } */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing);
+        }
+
+
+        .skill-item {
+            text-align: center;
+            padding: var(--spacing);
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-color);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+        .skills-grid {
+        grid-template-columns: 1fr;
+            }
+        }
+        /* Override project-card image rule ONLY for carousel */
+.project-card .carousel img {
+    width: auto !important;
+    height: 100% !important;
+    max-width: 100%;
+    object-fit: contain !important;
+}
+.btn-apk {
+    background-color: #28a745; /* Green for APK */
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-apk:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-github {
+    background-color: var(--primary-color); /* Keep original blue */
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-github:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+        .carousel {
+                position: relative;
+                width: 100%;
+                height: 520px;             /* Portrait height */
+                overflow: hidden;
+                background: #000;
+            }
+
+            .carousel-track {
+                display: flex;
+                height: 100%;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .carousel-slide {
+                min-width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .carousel-slide img {
+                height: 100%;
+                width: auto;               /* 🔥 KEY FIX */
+                max-width: 100%;
+                object-fit: contain;
+            }
+
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0,0,0,0.6);
+                color: #fff;
+                border: none;
+                padding: 10px 14px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .carousel-btn.prev { left: 10px; }
+            .carousel-btn.next { right: 10px; }
+
+            .carousel-dots {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 8px;
+            }
+
+            .carousel-dots span {
+                width: 8px;
+                height: 8px;
+                background: rgba(255,255,255,0.5);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .carousel-dots span.active {
+                background: #fff;
+            }
+
+            @media (max-width: 768px) {
+                .carousel {
+                    height: 420px;
+                }
+            }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing);
+        }
+
+        .project-card {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background-color: var(--secondary-color);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card .content {
+            padding: var(--spacing);
+        }
+
+        .project-card .content h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-card .content p {
+            margin-bottom: 15px;
+        }
+
+        .experience, .certificates {
+            text-align: center;
+        }
+
+        /* ============================= */
+        /* EXPERIENCE + RESUME SECTION */
+        /* ============================= */
+
+        .experience-resume {
+            background-color: var(--accent-color);
+        }
+
+        .exp-resume-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .experience-box,
+        .resume-box {
+            background: var(--secondary-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .experience-box h3,
+        .resume-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .experience-box ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .experience-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .resume-box {
+            text-align: left;
+        }
+
+        .resume-box .btn {
+           
+        display: flex;
+        justify-content: center; /* centers horizontally */
+        margin-top: 20px; /* optional spacing */
+
+            }
+
+        .resume-highlights {
+            margin-top: 25px;
+            font-weight: 600;
+        }
+
+        .resume-highlights p {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .exp-resume-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .certificates .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing);
+        }
+
+        .cert-item {
+            padding: var(--spacing);
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .cert-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        .contact .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--accent-color);
+        }
+
+        .footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .floating-contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .floating-contact:hover {
+            transform: scale(1.1);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            padding: 10px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+    <div class="floating-contact" onclick="scrollToContact()"><i class="fas fa-envelope"></i></div>
+
+    <section class="hero fade-in">
+        <div class="container">
+            <h1>Angel Gupta</h1>
+            <p class="tagline">Android Developer</p>
+            <p>Building fast, clean, and user-centric mobile apps.</p>
+            <div class="buttons">
+                <a href="#projects" class="btn">View Project</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about fade-in">
+        <div class="about-container">
+  <div class="about-image">
+    <img src="files/image.png" alt="Portrait">
+  </div>
+
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>I am an Android Developer specializing in Java, experienced in Room Database, clean architecture, Firebase Firestore, API integration, and creating real-world apps.</p>
+    <p>Passionate about building cloud-friendly, scalable, and modern Android applications with great UI/UX.</p>
+    <p>Currently learning advanced API handling, cloud sync features, and improving app performance.</p>
+  </div>
+</div>
+
+    </section>
+
+    <section id="skills" class="skills fade-in">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <h3>Android (Java)</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>XML Layouts</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Room Database</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Firebase Firestore</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>REST APIs</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Clean Architecture</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>MVVM</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQLite</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Jetpack Libraries</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-palette"></i>
+                    <h3>UI/UX Basics</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-figma"></i>
+                    <h3>Figma</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Material Design</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Version Control</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects fade-in">
+        <div class="container">
+            <h2>Project</h2>
+            <div class="projects">
+                <div class="project-card">
+                   <div class="carousel">
+                <div class="carousel-track">
+
+                    <div class="carousel-slide">
+                        <img src="files/trSS1.jpg">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="files/trSS2.jpg">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="files/trSS3.jpg">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="files/trSS4.jpg">
+                    </div>
+                    
+                      <div class="carousel-slide">
+                        <img src="files/trSS5.jpg">
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+
+                    <div class="content">
+                    <h3>Trackify – Expense & Budget Manager App</h3>
+                    <p>
+                        Income & expense tracking, Budget management module, Auto monthly transactions, 
+                        Local backup, Multi-account support, Analytics charts, Clean UI with bottom sheets.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <a href="files/Trackify.apk" class="btn-apk" download>
+                            <i class="fas fa-download"></i> &nbsp;Download APK
+                        </a>
+                        <a href="https://github.com/angel-0210/TRACKIFY" class="btn-github">
+                            <i class="fab fa-github"></i> &nbsp;View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+                <!-- <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="TrackNote App">
+                    <div class="content">
+                        <h3>TrackNote – Multi-User Note App</h3>
+                        <p>Room database, Add, edit, delete notes, Swipe delete, Search notes, Session manager, Simple and clean UI.</p>
+                        <a href="https://github.com/AngelGupta/TrackNote" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="QuizMaster App">
+                    <div class="content">
+                        <h3>QuizMaster – Quiz App</h3>
+                        <p>30 questions, 3 screens, Score tracking, Timer, Next/Prev navigation, Beginner-friendly UI.</p>
+                        <a href="https://github.com/AngelGupta/QuizMaster" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Basic Java & DSA Projects">
+                    <div class="content">
+                        <h3>Basic Java & DSA Projects</h3>
+                        <p>2D Arrays, Strings, OOPs, Looping, Sorting/searching programs.</p>
+                        <a href="https://github.com/AngelGupta/Java-DSA" class="btn">View on GitHub</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience-resume" class="experience-resume fade-in">
+    <div class="container">
+        <h2>Career Highlights</h2>
+
+        <div class="exp-resume-grid">
+
+            <!-- EXPERIENCE CONTENT -->
+            <div class="experience-box">
+                <h3>Experience</h3>
+
+                <p>
+                    Hands-on experience in building real-world Android applications using
+                    <strong>Java</strong>, with a strong focus on clean architecture,
+                    performance, and scalability.
+                
+                </p>
+
+                <ul>
+                    <li>Developed <strong>Trackify</strong> – an Expense & Budget Manager app</li>
+                    <li>Implemented Room Database & SQLite for offline-first storage</li>
+                    <li>Integrated Firebase Firestore for cloud sync</li>
+                    <li>Built analytics dashboards with charts & filters</li>
+                    <li>Added auto monthly recurring transactions</li>
+                    <li>Followed MVVM & Clean Architecture principles</li>
+                </ul>
+
+                <p>
+                    Strong foundation in Java, DSA, Android Jetpack libraries,
+                    and modern UI/UX practices.
+                </p>
+            </div>
+
+            <!-- RESUME CARD -->
+            <div class="resume-box">
+                <h3>Resume</h3>
+
+                <p>
+                    Download my resume to get a complete overview of my
+                    skills, projects, and experience.
+                </p>
+
+                <a href="files/Angel Gupta Resume.pdf" class="btn" download>
+                    <i class="fas fa-download"></i> &nbsp;Download CV
+                </a>
+
+                <div class="resume-highlights">
+                    <p>✔ Android (Java)</p>
+                    <p>✔ Room • Firebase • REST APIs</p>
+                    <p>✔ Clean Architecture • MVVM</p>
+                    <p>✔ Git • GitHub</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+
+    <section id="certificates" class="certificates fade-in">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="files/Android cert.jpg" alt="Certificate 1">
+                    <p>Android Development Certification</p>
+                </div>
+                <div class="cert-item">
+                    <img src="files/java cert.jpg" alt="Certificate 2">
+                    <p>Java Programming Certification</p>
+                </div>
+                <!-- <div class="cert-item">
+                    <img src="https://via.placeholder.com/200x150" alt="Certificate 3">
+                    <p>Firebase Certification</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <div class="container">
+            <h2>Contact Me</h2>
+         
+            <div class="links">
+                <a href="mailto:angelgupta.dev@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/angel-0210" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const theme = body.getAttribute('data-theme');
+            body.setAttribute('data-theme', theme === 'dark')
+        }
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prev = carousel.querySelector('.prev');
+    const next = carousel.querySelector('.next');
+    const dotsBox = carousel.querySelector('.carousel-dots');
+
+    let index = 0;
+    let startX = 0;
+    let endX = 0;
+    let autoplayInterval;
+
+    /* ---------- DOTS ---------- */
+    slides.forEach((_, i) => {
+        const dot = document.createElement('span');
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => move(i);
+        dotsBox.appendChild(dot);
+    });
+
+    const dots = dotsBox.children;
+
+    function move(i) {
+        index = i;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        [...dots].forEach(d => d.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        move((index + 1) % slides.length);
+    }
+
+    function prevSlide() {
+        move((index - 1 + slides.length) % slides.length);
+    }
+
+    next.onclick = nextSlide;
+    prev.onclick = prevSlide;
+
+    /* ---------- AUTOPLAY ---------- */
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 3000); // 3 seconds
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    startAutoplay();
+
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    /* ---------- SWIPE SUPPORT ---------- */
+    carousel.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', e => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const threshold = 50; // swipe sensitivity
+        if (startX - endX > threshold) {
+            nextSlide(); // swipe left
+        } else if (endX - startX > threshold) {
+            prevSlide(); // swipe right
+        }
+    }
+});
+</script>
