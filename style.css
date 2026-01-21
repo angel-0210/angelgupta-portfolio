@@ -372,6 +372,16 @@ section::after {
 }
 
 /* ================= CONTACT ================= */
+
+.contact-subheading {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;   /* <-- CENTER ALIGN */
+  color: #b0b0b0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 /* ================= FIXED CONTACT CARDS ================= */
 .contact-grid {
   /* This ensures cards stay side-by-side on desktop but don't stretch infinitely */
@@ -386,7 +396,7 @@ section::after {
   text-align: left;
   padding: 20px;
   /* Set a fixed height so they aren't "very large" */
-  height: 220px; 
+  height: 180px; 
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
