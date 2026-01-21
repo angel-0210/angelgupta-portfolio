@@ -393,7 +393,7 @@ section::after {
 }
 
 .contact-card i {
-  font-size: 24px;
+  font-size: 28px;
   color: #1e90ff;
   margin-bottom: 16px;
 }
@@ -425,42 +425,40 @@ section::after {
   color: #fff;
   border-color: #1e90ff;
 }
-/* ================= CONTACT CARD – SLEEK ================= */
+/* ================= CONTACT (SLEEK) ================= */
 .contact-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
-  padding: 22px 24px;
+  padding: 18px 20px;
   border-radius: 18px;
+  min-height: 120px;      /* compact height */
 }
 
-/* Icon container */
 .contact-card i {
-  font-size: 26px;
+  font-size: 28px;
   color: #1e90ff;
-  min-width: 42px;
+  min-width: 40px;
   text-align: center;
-  margin: 0;
+  margin-bottom: 0;       /* remove top spacing */
 }
 
-/* Text wrapper */
-.contact-content {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Title */
 .contact-card h4 {
   font-size: 18px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-/* Description */
 .contact-card p {
-  font-size: 15px;
-  margin-bottom: 12px;
-  line-height: 1.5;
+  color: #b0b0b0;
+  margin-bottom: 8px;
+  line-height: 1.35;
+  font-size: 14px;
 }
+
+.contact-link {
+  font-size: 14px;
+}
+
 
 /* ================= REVEAL ================= */
 .reveal {
@@ -676,22 +674,16 @@ section::after {
 .project-back {
   overflow-y: auto;
 }
+
 @media (max-width: 600px) {
   .contact-card {
-    padding: 18px 16px;
-    gap: 14px;
+    padding: 14px 16px;
+    gap: 12px;
+    min-height: 110px;
   }
 
   .contact-card i {
-    font-size: 22px;
+    font-size: 24px;
     min-width: 36px;
-  }
-
-  .contact-card h4 {
-    font-size: 16px;
-  }
-
-  .contact-card p {
-    font-size: 14px;
   }
 }
