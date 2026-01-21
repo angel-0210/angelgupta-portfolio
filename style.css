@@ -565,22 +565,6 @@ section::after {
   }
 }
 
-#projects {
-  padding-bottom: 120px;
-}
-.projects-grid {
-  align-items: stretch;
-}
-.flip-card {
-  height: 100%;
-}
-
-.flip-inner {
-  height: 100%;
-}
-.project-actions {
-  margin-top: 20px;
-}
 /* ================= FIX PROJECTS OVERLAP ================= */
 
 /* Ensure projects section fully wraps dynamic card height */
