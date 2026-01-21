@@ -568,6 +568,82 @@ section::after {
 }
 
 
+/* ================= PROJECTS – RESPONSIVE FIX ================= */
+
+/* Laptop & Desktop */
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+
+  .project-card {
+    height: 460px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    height: auto;
+    min-height: 440px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* Stack cards */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce heading */
+  section h2 {
+    font-size: 28px;
+  }
+
+  /* Project card */
+  .project-card {
+    height: auto;
+    min-height: unset;
+    padding: 18px;
+  }
+
+  /* Disable fixed flip height */
+  .flip-inner {
+    min-height: auto;
+  }
+
+  /* Allow scrolling on back */
+  .project-back .details {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  /* Text alignment */
+  .project-back p,
+  .project-back ul,
+  .project-back li {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  /* Buttons full width */
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
