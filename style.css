@@ -374,59 +374,66 @@ section::after {
 /* ================= CONTACT ================= */
 /* ================= FIXED CONTACT CARDS ================= */
 .contact-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: stretch; /* Forces all cards in a row to be the same height */
-}
-.contact-subheading {
-  max-width: 720px;
-  margin: 0 auto 30px;
-  text-align: center;
-  color: #b0b0b0;
-  font-size: 18px;
-  line-height: 1.5;
+  /* This ensures cards stay side-by-side on desktop but don't stretch infinitely */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 350px)); 
+  justify-content: center; /* Centers the row of cards */
+  gap: 25px;
 }
 
 .contact-card {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 30px;
-  height: 100%; /* Ensures internal box fills the grid space */
-  box-sizing: border-box;
+  padding: 25px;
+  /* Set a fixed height so they aren't "very large" */
+  height: 220px; 
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
 
 .contact-card i {
-  font-size: 32px;
+  font-size: 24px;
   color: #1e90ff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact-card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  word-break: break-all; /* Prevents long emails/links from breaking layout */
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  /* This prevents the long email from breaking the card layout */
+  word-break: break-word; 
 }
 
 .contact-card p {
   color: #b0b0b0;
-  margin-bottom: 20px;
-  font-size: 15px;
-  flex-grow: 1; /* Pushes the link below to the bottom of the card */
+  font-size: 14px;
+  margin-bottom: auto; /* This acts as the "spacer" to push the link to the bottom */
 }
 
 .contact-link {
-  margin-top: auto; /* Aligns link to the bottom */
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
   color: #1e90ff;
   font-weight: 600;
-  transition: gap 0.3s ease;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
-.contact-link:hover {
-  gap: 12px; /* Smooth arrow movement on hover */
+.contact-link i {
+  font-size: 18px;
+  margin-bottom: 0; /* Resets the icon margin for the arrow */
+}
+
+/* Hover effect to match your "Glass" style */
+.contact-card:hover {
+  border-color: #1e90ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(30, 144, 255, 0.1);
 }
 
 /* ================= REVEAL ================= */
