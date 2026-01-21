@@ -404,38 +404,38 @@ section::after {
 }
 
 .contact-card i {
-  font-size: 24px;
+  font-size: 20px;
   color: #1e90ff;
   margin-bottom: 10px;
 }
 
 .contact-card h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   /* This prevents the long email from breaking the card layout */
   word-break: break-word; 
 }
 
 .contact-card p {
   color: #b0b0b0;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: auto; /* This acts as the "spacer" to push the link to the bottom */
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 4px;
   text-decoration: none;
   color: #1e90ff;
   font-weight: 600;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .contact-link i {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0; /* Resets the icon margin for the arrow */
 }
 
@@ -457,6 +457,15 @@ section::after {
   opacity: 1;
   transform: translateY(0);
 }
+.contact-subheading.reveal {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;   /* <-- CENTER ALIGN */
+  color: #b0b0b0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 
 /* ================= FOOTER ================= */
 .footer {
@@ -638,17 +647,17 @@ section::after {
 /* ================= MOBILE OPTIMIZATION (CONTACT CARDS) ================= */
 @media (max-width: 480px) {
   #contact {
-    padding: 30px 10px; /* Reduce section padding */
+    padding: 20px 5px; /* Reduce section padding */
   }
 
   .contact-grid {
-    gap: 15px; /* Tighter spacing between cards */
+    gap: 10px; /* Tighter spacing between cards */
     /* Forces cards to stack and allows them to be smaller */
     grid-template-columns: 1fr; 
   }
 
   .contact-card {
-    padding: 20px; /* Smaller internal padding */
+    padding: 10px; /* Smaller internal padding */
     border-radius: 15px; /* Slightly sharper corners for small scale */
   }
 
@@ -663,11 +672,11 @@ section::after {
   }
 
   .contact-card p {
-    font-size: 11px; /* Smaller description */
+    font-size: 10px; /* Smaller description */
     margin-bottom: 5px;
   }
 
   .contact-link {
-    font-size: 12px; /* Smaller link text */
+    font-size: 11px; /* Smaller link text */
   }
 }
