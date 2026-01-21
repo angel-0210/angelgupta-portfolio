@@ -77,7 +77,13 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const overlay = document.getElementById("overlay");
 
-hamburger.addEventListener("click", () => {
+// prevent overlay click from triggering when you click inside menu
+navLinks.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+hamburger.addEventListener("click", (e) => {
+  e.stopPropagation();
   hamburger.classList.toggle("active");
   navLinks.classList.toggle("show");
   overlay.classList.toggle("show");
@@ -87,12 +93,4 @@ overlay.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navLinks.classList.remove("show");
   overlay.classList.remove("show");
-});
-
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navLinks.classList.remove("show");
-    overlay.classList.remove("show");
-  });
 });
