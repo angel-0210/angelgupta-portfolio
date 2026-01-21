@@ -53,7 +53,7 @@ function flipCard(btn) {
 
 // ====== NAVBAR ACTIVE LINK ======
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinksA = document.querySelectorAll("nav ul li a"); // renamed variable
 
 window.addEventListener("scroll", () => {
   let current = "";
@@ -65,18 +65,19 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  navLinks.forEach(link => {
+  navLinksA.forEach(link => {
     link.classList.remove("active");
     if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active");
     }
   });
 });
-//hamburger 
-const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navLinks.classList.toggle("show");
-  });
+// ====== HAMBURGER ======
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("show");
+});
