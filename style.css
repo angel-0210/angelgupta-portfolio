@@ -711,25 +711,54 @@ section::after {
 }
 
 /* HIDE MENU ON MOBILE */
+/* ========== LEFT SIDED HAMBURGER MENU ========== */
 @media (max-width: 900px) {
+  nav {
+    position: relative;
+  }
+
   nav ul {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 40px;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px;
-    border-radius: 12px;
+    display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    left: -260px;     /* hidden off screen */
+    width: 260px;
+    height: 100vh;
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    transition: left 0.3s ease;
+    z-index: 999;
   }
 
   nav ul.show {
-    display: flex;
+    left: 0;          /* slide in */
   }
 
   .hamburger {
     display: flex;
+    position: relative;
+    z-index: 1000;
   }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+}
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 900;
+}
+
+.overlay.show {
+  display: block;
 }
