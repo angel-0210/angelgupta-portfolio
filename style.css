@@ -377,6 +377,14 @@ section::after {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: stretch; /* Forces all cards in a row to be the same height */
 }
+.contact-subheading {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 18px;
+  line-height: 1.5;
+}
 
 .contact-card {
   display: flex;
@@ -628,21 +636,21 @@ section::after {
   }
 
   .contact-card i {
-    font-size: 24px; /* Smaller icons */
+    font-size: 20px; /* Smaller icons */
     margin-bottom: 12px;
   }
 
   .contact-card h4 {
-    font-size: 16px; /* Smaller heading for long emails/IDs */
+    font-size: 14px; /* Smaller heading for long emails/IDs */
     margin-bottom: 5px;
   }
 
   .contact-card p {
-    font-size: 13px; /* Smaller description */
+    font-size: 11px; /* Smaller description */
     margin-bottom: 15px;
   }
 
   .contact-link {
-    font-size: 14px; /* Smaller link text */
+    font-size: 12px; /* Smaller link text */
   }
 }
