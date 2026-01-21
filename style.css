@@ -714,7 +714,7 @@ section::after {
 /* ========== LEFT SIDED HAMBURGER MENU ========== */
 @media (max-width: 900px) {
   nav {
-    position: relative;
+    justify-content: space-between;
   }
 
   nav ul {
@@ -723,7 +723,7 @@ section::after {
     gap: 15px;
     position: fixed;
     top: 0;
-    left: -260px;     /* hidden off screen */
+    left: -260px;
     width: 260px;
     height: 100vh;
     padding: 60px 20px;
@@ -734,7 +734,7 @@ section::after {
   }
 
   nav ul.show {
-    left: 0;          /* slide in */
+    left: 0;
   }
 
   .hamburger {
@@ -746,11 +746,8 @@ section::after {
   nav a {
     font-size: 18px;
   }
-
-  nav ul li {
-    margin: 8px 0;
-  }
 }
+
 .overlay {
   display: none;
   position: fixed;

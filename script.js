@@ -89,3 +89,10 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("show");
 });
 
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navLinks.classList.remove("show");
+    overlay.classList.remove("show");
+  });
+});
