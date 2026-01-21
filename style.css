@@ -657,26 +657,26 @@ section::after {
   }
 
   .contact-card {
-    padding: 10px; /* Smaller internal padding */
+    padding: 8px; /* Smaller internal padding */
     border-radius: 15px; /* Slightly sharper corners for small scale */
   }
 
   .contact-card i {
-    font-size: 20px; /* Smaller icons */
-    margin-bottom: 8px;
+    font-size: 18px; /* Smaller icons */
+    margin-bottom: 4px;
   }
 
   .contact-card h4 {
-    font-size: 14px; /* Smaller heading for long emails/IDs */
+    font-size: 12px; /* Smaller heading for long emails/IDs */
     margin-bottom: 5px;
   }
 
   .contact-card p {
-    font-size: 10px; /* Smaller description */
-    margin-bottom: 5px;
+    font-size: 8px; /* Smaller description */
+    margin-bottom: 3px;
   }
 
   .contact-link {
-    font-size: 11px; /* Smaller link text */
+    font-size: 10px; /* Smaller link text */
   }
 }
