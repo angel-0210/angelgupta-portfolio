@@ -35,41 +35,19 @@ nav a {
   text-decoration: none;
   position: relative;
   padding: 6px 2px;
-  transition: color 0.3s ease;
 }
 
-/* Active nav highlight */
 nav a.active {
   color: #1e90ff;
 }
 
-nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 2px;
-  background: #1e90ff;
-  border-radius: 2px;
-}
-
 /* ================= HERO ================= */
 .hero {
-  position: relative;
   padding: 120px 60px;
-  overflow: hidden;
-}
-
-#particles-js {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+  position: relative;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -93,218 +71,41 @@ nav a.active::after {
   color: #b0b0b0;
 }
 
-.hero-desc {
-  margin-top: 20px;
-  text-align: justify;
-}
-
-.hero-buttons {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-
-.btn {
-  padding: 12px 22px;
-  background: #1e90ff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid #1e90ff;
-  color: #1e90ff;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-.hero-stats {
-  margin-top: 30px;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
 /* ================= SECTION ================= */
 section {
-  padding: 70px 30px;
+  padding: 80px 30px;
 }
 
 section h2 {
   font-size: 42px;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
-section::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, #1e90ff, transparent);
-  margin: 70px auto 0;
-  opacity: 0.6;
-}
-
-/* ================= GLASS CARD ================= */
+/* ================= GLASS ================= */
 .glass {
-  width: 100%;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 20px;
-  padding: 20px;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.glass:hover {
-  border-color: rgba(30,144,255,0.6);
-  box-shadow: 0 10px 30px rgba(30,144,255,0.25);
-}
-
-/* ================= GRIDS ================= */
-.skills-grid,
-.projects-grid,
-.cert-grid,
-.contact-grid,
-.two-column {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  gap: 30px;
-}
-
-/* ================= SKILLS ================= */
-.skills-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.skills-category {
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-category h3 {
-  font-size: 22px;
-  margin-bottom: 16px;
-}
-
-.skill {
-  margin-bottom: 12px;
-}
-
-.skill span {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.bar {
-  height: 10px;
-  background: rgba(255,255,255,0.12);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #1e90ff, #ffcc00);
-  border-radius: 12px;
+  padding: 22px;
 }
 
 /* ================= PROJECTS ================= */
 .projects-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 450px;
-  padding: 20px;
-  border-radius: 20px;
-  background: #1f1f1f;
-}
-
-/* Justify content properly */
-.project-desc,
-.project-row p,
-.project-back p,
-.project-back ul {
-  text-align: justify;
-}
-.project-back p {
-  margin: 10px 0;
-}
-
-.project-back ul {
-  margin: 8px 0 14px 20px;
-}
-
-.project-back li {
-  margin-bottom: 8px;
-}
-
-/* Icon + text alignment */
-.project-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.project-row i {
-  margin-top: 4px;
-  min-width: 18px;
-  font-size: 16px;
-}
-
-/* Back card layout */
-.project-back {
-  transform: rotateY(180deg);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-back .details {
-  overflow-y: auto;
-  max-height: 330px;
-  padding-right: 10px;
-}
-
-/* Icon colors */
-.project-row.problem i { color: #ff4d4d; }
-.project-row.solution i { color: #ffcc00; }
-.project-row.tech i { color: #1e90ff; }
-
-.project-back .fa-clock { color: #1e90ff; }
-.project-back .fa-book { color: #ffcc00; }
-.project-back .fa-triangle-exclamation { color: #ff4d4d; }
-
-.project-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: auto;
-}
-
-/* ================= FLIP CARD ================= */
+/* ================= FLIP CARD (AUTO HEIGHT) ================= */
 .flip-card {
-  perspective: 1200px;
+  perspective: 1400px;
 }
 
 .flip-inner {
-  position: relative;
-  width: 100%;
-  min-height: 450px;
-  height: auto;
+  display: grid;
   transform-style: preserve-3d;
   transition: transform 0.8s ease;
 }
@@ -313,271 +114,89 @@ section::after {
   transform: rotateY(180deg);
 }
 
-.flip-card .project-card {
-  position: absolute;
-  inset: 0;
+/* BOTH SIDES */
+.project-card {
+  grid-area: 1 / 1;
   backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
+/* FRONT */
+.project-card:not(.project-back) {
+  transform: rotateY(0deg);
+}
+
+/* BACK */
 .project-back {
   transform: rotateY(180deg);
 }
 
-.flip-inner {
-  min-height: 420px;
-  will-change: transform;
+/* LET CONTENT CONTROL HEIGHT */
+.project-back ul {
+  margin-left: 20px;
+}
+
+.project-back li {
+  margin-bottom: 8px;
+}
+
+/* BUTTONS */
+.project-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
 }
 
 /* ================= CAREER ================= */
 .two-column {
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: stretch;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
 }
 
-#career .glass {
-  width: 100%;
-  max-width: 380px;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  padding: 26px;
-  text-align: center;
-}
-
-.career-list {
-  list-style-position: inside;
-  text-align: left;
-}
-
-.resume-tech {
-  margin-top: auto;
-  font-size: 14px;
-  color: #b0b0b0;
-}
-
-/* ================= CERTIFICATES ================= */
+/* ================= CERTS ================= */
 .cert-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.cert-card {
-  text-align: center;
-}
-
-.cert-card i {
-  font-size: 28px;
-  color: #1e90ff;
-  margin-bottom: 10px;
+  gap: 30px;
 }
 
 /* ================= CONTACT ================= */
-.contact-subheading {
-  max-width: 720px;
-  margin: 0 auto 30px;
-  text-align: center;
-  color: #b0b0b0;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .contact-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.contact-card {
-  text-align: left;
-  padding: 28px 24px;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-card i {
-  font-size: 28px;
-  color: #1e90ff;
-  margin-bottom: 16px;
-}
-
-.contact-card h4 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.contact-card p {
-  color: #b0b0b0;
-  margin-bottom: 18px;
-  line-height: 1.5;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #1e90ff;
-  border-bottom: 1px solid rgba(30, 144, 255, 0.4);
-  padding-bottom: 4px;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.contact-link:hover {
-  color: #fff;
-  border-color: #1e90ff;
-}
-
-/* ================= REVEAL ================= */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+  gap: 30px;
 }
 
 /* ================= FOOTER ================= */
 .footer {
-  padding: 40px 30px 20px;
+  padding: 40px 30px;
   background: rgba(0,0,0,0.75);
-  backdrop-filter: blur(10px);
-  color: #e0e0e0;
 }
 
 .footer-container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
-  align-items: start;
-}
-
-.footer-brand h3 {
-  font-size: 24px;
-  margin-bottom: 6px;
-}
-
-.footer-brand p {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-.footer-links h4,
-.footer-connect h4 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.footer-links ul {
-  list-style: none;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #b0b0b0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #1e90ff;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a {
-  color: #b0b0b0;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #1e90ff;
-}
-
-.footer-line {
-  width: 100%;
-  height: 1px;
-  background: rgba(255,255,255,0.2);
-  margin: 30px 0 18px;
-}
-
-.footer-copyright {
-  text-align: center;
-  color: #b0b0b0;
-  font-size: 14px;
-  margin-bottom: 0;
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-  nav ul {
-    display: flex;
-    overflow-x: auto;
-  }
-
-  section {
-    padding: 70px 20px;
-  }
-
-  .two-column {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .project-back p,
-  .project-back ul,
-  .project-back li {
-    text-align: left;
-  }
-}
-
 @media (max-width: 768px) {
-  .section-title,
-  h1 {
-    font-size: 1.6rem;
-    text-align: center;
+  section h2 {
+    font-size: 28px;
   }
 
-  .section-description,
-  p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    text-align: center;
+  .hero-left h1 {
+    font-size: 32px;
   }
-
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-description {
-    font-size: 0.85rem;
-  }
-}
-
-#projects {
-  padding-bottom: 120px;
-}
-.projects-grid {
-  align-items: stretch;
-}
-.flip-card {
-  height: 100%;
-}
-
-.flip-inner {
-  height: 100%;
-}
-.project-actions {
-  margin-top: 20px;
 }
