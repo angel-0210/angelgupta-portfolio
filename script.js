@@ -1,7 +1,7 @@
 // ====== TYPED ======
 new Typed("#typed", {
   strings: [
-    "Android Developer"," Java Expert","Room Expert","Firebase Enthusiast"," REST API Integrator"
+    "Android Developer"," Java","Room","Firebase Enthusiast"," REST API Integrator"
   ],
   typeSpeed: 60,
   backSpeed: 30,
