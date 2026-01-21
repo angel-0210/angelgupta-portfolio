@@ -617,3 +617,26 @@ section::after {
 #projects {
   overflow: visible;
 }
+/* ================= FIX FLIP CARD SHIFT ================= */
+
+/* Lock flip card height */
+.flip-card {
+  position: relative;
+  height: 450px; /* SAME as original card height */
+}
+
+/* Prevent height recalculation during flip */
+.flip-inner {
+  height: 100%;
+}
+
+/* Absolutely stack both sides */
+.flip-card .project-card {
+  position: absolute;
+  inset: 0;
+}
+
+/* Prevent back side from resizing layout */
+.project-back {
+  overflow-y: auto;
+}
