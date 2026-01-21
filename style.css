@@ -425,6 +425,42 @@ section::after {
   color: #fff;
   border-color: #1e90ff;
 }
+/* ================= CONTACT CARD – SLEEK ================= */
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 24px;
+  border-radius: 18px;
+}
+
+/* Icon container */
+.contact-card i {
+  font-size: 26px;
+  color: #1e90ff;
+  min-width: 42px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Text wrapper */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.contact-card h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.contact-card p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
 
 /* ================= REVEAL ================= */
 .reveal {
@@ -639,4 +675,23 @@ section::after {
 /* Prevent back side from resizing layout */
 .project-back {
   overflow-y: auto;
+}
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 18px 16px;
+    gap: 14px;
+  }
+
+  .contact-card i {
+    font-size: 22px;
+    min-width: 36px;
+  }
+
+  .contact-card h4 {
+    font-size: 16px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+  }
 }
