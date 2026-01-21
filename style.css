@@ -384,7 +384,7 @@ section::after {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 25px;
+  padding: 20px;
   /* Set a fixed height so they aren't "very large" */
   height: 220px; 
   background: rgba(255, 255, 255, 0.05);
@@ -396,13 +396,13 @@ section::after {
 .contact-card i {
   font-size: 24px;
   color: #1e90ff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .contact-card h4 {
   font-size: 18px;
   color: #ffffff;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   /* This prevents the long email from breaking the card layout */
   word-break: break-word; 
 }
@@ -416,12 +416,12 @@ section::after {
 .contact-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   text-decoration: none;
   color: #1e90ff;
   font-weight: 600;
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .contact-link i {
@@ -628,7 +628,7 @@ section::after {
 /* ================= MOBILE OPTIMIZATION (CONTACT CARDS) ================= */
 @media (max-width: 480px) {
   #contact {
-    padding: 40px 15px; /* Reduce section padding */
+    padding: 30px 10px; /* Reduce section padding */
   }
 
   .contact-grid {
@@ -644,7 +644,7 @@ section::after {
 
   .contact-card i {
     font-size: 20px; /* Smaller icons */
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .contact-card h4 {
@@ -654,7 +654,7 @@ section::after {
 
   .contact-card p {
     font-size: 11px; /* Smaller description */
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .contact-link {
