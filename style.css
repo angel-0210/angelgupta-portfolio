@@ -610,3 +610,39 @@ section::after {
 .project-back {
   overflow-y: auto;
 }
+/* ================= MOBILE OPTIMIZATION (CONTACT CARDS) ================= */
+@media (max-width: 480px) {
+  #contact {
+    padding: 40px 15px; /* Reduce section padding */
+  }
+
+  .contact-grid {
+    gap: 15px; /* Tighter spacing between cards */
+    /* Forces cards to stack and allows them to be smaller */
+    grid-template-columns: 1fr; 
+  }
+
+  .contact-card {
+    padding: 20px; /* Smaller internal padding */
+    border-radius: 15px; /* Slightly sharper corners for small scale */
+  }
+
+  .contact-card i {
+    font-size: 24px; /* Smaller icons */
+    margin-bottom: 12px;
+  }
+
+  .contact-card h4 {
+    font-size: 16px; /* Smaller heading for long emails/IDs */
+    margin-bottom: 5px;
+  }
+
+  .contact-card p {
+    font-size: 13px; /* Smaller description */
+    margin-bottom: 15px;
+  }
+
+  .contact-link {
+    font-size: 14px; /* Smaller link text */
+  }
+}
