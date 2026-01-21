@@ -540,17 +540,33 @@ section::after {
 }
 
 /* Responsive Footer */
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+
+  footer,
+  .footer {
     text-align: center;
   }
 
-  .footer-links,
-  .footer-connect {
-    margin-top: 20px;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
   }
 }
+
 
 
 /* ================= RESPONSIVE ================= */
@@ -567,5 +583,43 @@ section::after {
 
   .two-column {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .project-back p,
+  .project-back ul,
+  .project-back li {
+    text-align: left;
+  }
+
+}
+/* Mobile screens */
+@media (max-width: 768px) {
+
+  /* Main heading */
+  .section-title,
+  h1 {
+    font-size: 1.6rem; /* reduce from large desktop size */
+    text-align: center;
+  }
+
+  /* Paragraph text */
+  .section-description,
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Card titles (LinkedIn, GitHub) */
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  /* Card description */
+  .card-description {
+    font-size: 0.85rem;
   }
 }
