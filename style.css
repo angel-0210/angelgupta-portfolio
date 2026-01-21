@@ -590,3 +590,30 @@ section::after {
 .project-card {
   overflow: visible;
 }
+/* ================= FINAL FIX : PROJECTS OVERLAP ================= */
+
+/* Let cards define height dynamically */
+.flip-card {
+  position: relative;
+}
+
+/* Remove fixed height impact */
+.flip-card .project-card {
+  position: relative;
+  height: auto;
+}
+
+/* Ensure back content expands container */
+.project-back {
+  position: relative;
+}
+
+/* Force grid to respect tallest card */
+.projects-grid {
+  align-items: start;
+}
+
+/* Ensure section grows with content */
+#projects {
+  overflow: visible;
+}
