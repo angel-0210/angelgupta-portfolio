@@ -747,15 +747,14 @@ section::after {
     font-size: 18px;
   }
 }
+nav ul {
+  z-index: 1001;
+}
 
 .overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  z-index: 900;
+  pointer-events: none;
 }
 
 .overlay.show {
-  display: block;
+  pointer-events: auto;
 }

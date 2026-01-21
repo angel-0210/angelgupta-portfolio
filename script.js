@@ -77,7 +77,6 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const overlay = document.getElementById("overlay");
 
-// prevent overlay click from triggering when you click inside menu
 navLinks.addEventListener("click", (e) => {
   e.stopPropagation();
 });
@@ -93,4 +92,13 @@ overlay.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navLinks.classList.remove("show");
   overlay.classList.remove("show");
+});
+
+// Close menu when link clicked
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navLinks.classList.remove("show");
+    overlay.classList.remove("show");
+  });
 });
