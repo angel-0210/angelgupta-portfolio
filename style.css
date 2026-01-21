@@ -680,3 +680,56 @@ section::after {
     font-size: 10px; /* Smaller link text */
   }
 }
+
+/* ================= HAMBURGER MENU ================= */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* HAMBURGER ANIMATION */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* HIDE MENU ON MOBILE */
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
