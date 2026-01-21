@@ -1,7 +1,4 @@
-// YEAR
-document.getElementById("year").innerText = new Date().getFullYear();
-
-// TYPING
+// ====== TYPED ======
 new Typed("#typed", {
   strings: [
     "Android Developer"," Java Expert","Room Expert","Firebase Enthusiast"," REST API Integrator"
@@ -11,7 +8,7 @@ new Typed("#typed", {
   loop: true
 });
 
-// PARTICLES (HERO ONLY)
+// ====== PARTICLES ======
 particlesJS("particles-js", {
   particles: {
     number: { value: 70 },
@@ -34,23 +31,27 @@ particlesJS("particles-js", {
   }
 });
 
-// SCROLL REVEAL
+// ====== REVEAL ======
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function revealOnScroll() {
   reveals.forEach(el => {
     const top = el.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
       el.classList.add("active");
     }
   });
-});
- //FLIP LOGIC
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+// ====== FLIP LOGIC ======
 function flipCard(btn) {
   btn.closest(".flip-card").classList.toggle("flipped");
 }
 
-// Navbar active link highlight
+// ====== NAVBAR ACTIVE LINK ======
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
