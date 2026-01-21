@@ -370,7 +370,6 @@ section::after {
   color: #1e90ff;
   margin-bottom: 10px;
 }
-
 /* ================= CONTACT ================= */
 .contact-subheading {
   max-width: 720px;
@@ -386,45 +385,38 @@ section::after {
 }
 
 .contact-card {
+  display: flex;               /* icon + text in row */
+  align-items: center;         /* vertically center */
+  gap: 16px;
   text-align: left;
-  padding: 28px 24px;
+  padding: 18px 20px;          /* reduced padding */
   position: relative;
   overflow: hidden;
+  border-radius: 18px;
+  min-height: 120px;           /* shorter height */
 }
 
 .contact-card i {
   font-size: 28px;
   color: #1e90ff;
-  margin-bottom: 16px;
+  margin-bottom: 0;            /* remove extra space */
+  min-width: 42px;
+  text-align: center;
 }
 
 .contact-card h4 {
-  font-size: 22px;
-  margin-bottom: 8px;
+  font-size: 18px;             /* smaller title */
+  margin-bottom: 4px;
 }
 
 .contact-card p {
   color: #b0b0b0;
-  margin-bottom: 18px;
-  line-height: 1.5;
+  margin-bottom: 8px;
+  line-height: 1.35;
+  font-size: 14px;             /* smaller text */
 }
 
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #1e90ff;
-  border-bottom: 1px solid rgba(30, 144, 255, 0.4);
-  padding-bottom: 4px;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.contact-link:hover {
-  color: #fff;
-  border-color: #1e90ff;
-}
+.conta
 
 /* ================= REVEAL ================= */
 .reveal {
@@ -565,31 +557,6 @@ section::after {
   }
 }
 
-/* ================= FIX PROJECTS OVERLAP ================= */
-
-/* Ensure projects section fully wraps dynamic card height */
-#projects {
-  padding-bottom: 140px;
-}
-
-/* Ensure grid items stretch properly */
-.projects-grid {
-  align-items: stretch;
-}
-
-/* Ensure flip cards expand naturally */
-.flip-card {
-  height: auto;
-}
-
-.flip-inner {
-  height: auto;
-}
-
-/* Prevent margin collapse issues */
-.project-card {
-  overflow: visible;
-}
 /* ================= FINAL FIX : PROJECTS OVERLAP ================= */
 
 /* Let cards define height dynamically */
