@@ -559,9 +559,7 @@ section::after {
     display: flex;
     overflow-x: auto;
   }
-  .project-card {
-    height: auto;
-  }
+
 
   section {
     padding: 70px 20px;
