@@ -102,3 +102,25 @@ navLinks.querySelectorAll("a").forEach(link => {
     overlay.classList.remove("show");
   });
 });
+
+// Reusable close function for the mobile burger menu
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navLinks.classList.remove("show");
+  overlay.classList.remove("show");
+}
+
+// Close on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMenu();
+});
+
+// Close on resize (useful when switching between mobile/desktop)
+window.addEventListener("resize", () => {
+  if (navLinks.classList.contains("show")) closeMenu();
+});
+
+// Close on scroll (only when menu is open)
+window.addEventListener("scroll", () => {
+  if (navLinks.classList.contains("show")) closeMenu();
+}, { passive: true });
