@@ -740,7 +740,7 @@ section::after {
   .hamburger {
     display: flex;
     position: relative;
-    z-index: 1000;
+    z-index: 1002; /* ensure hamburger stays above the sliding menu so the close icon is visible */
   }
 
   nav a {
