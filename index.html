@@ -1,559 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angel Gupta - Android Developer</title>
- <!-- Favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Angel Gupta - Android Developer Portfolio. Highlighting mobile applications, internship experience at ThinkNEXT, technical expertise, and development workflow.">
+  <meta name="keywords" content="Angel Gupta, Android Developer, Mobile App Developer, ThinkNEXT, Trackify, TrackNote, Kotlin Developer, Java, Room Database, SQLite">
+  <meta name="author" content="Angel Gupta">
+  <meta name="theme-color" content="#080A0F">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/angel-0210">
+  <meta property="og:title" content="Angel Gupta | Android Developer & Product Builder">
+  <meta property="og:description" content="Angel Gupta - Android Developer Portfolio. Highlighting mobile applications, internship experience at ThinkNEXT, technical expertise, and development workflow.">
+  <meta property="og:image" content="files/a.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Angel Gupta | Android Developer & Product Builder">
+  <meta property="twitter:description" content="Angel Gupta - Android Developer Portfolio. Highlighting mobile applications, internship experience at ThinkNEXT, technical expertise, and development workflow.">
+  <meta property="twitter:image" content="files/a.png">
+  
+  <title>Angel Gupta | Android Developer & Product Builder</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="files/a.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="overlay" id="overlay"></div>
 
-<nav>
-
-   <button class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
- <a href="#about"> <h2>Angel Gupta</h2></a>
-  <ul id="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#career">Career</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="about">
-  <div id="particles-js"></div>
-
-  <div class="hero-content">
-    <div class="hero-left">
-      <h1>Hi, I'm <span>Angel Gupta</span></h1>
-
-      <p class="subheading"><span id="typed"></span></p>
-
-      <p class="hero-desc">
-        I build scalable Android apps with clean architecture, smooth UI, and real-world features.
-        I focus on performance, UX, and maintainable code. Currently learning advanced API handling,
-        cloud sync features, and improving app performance.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">Explore Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat">
-          <h3>80%</h3>
-          <p>Android Expertise</p>
-        </div>
-        <div class="stat">
-          <h3>100%</h3>
-          <p>Problem Solving</p>
-        </div>
-      </div>
-    </div>
-
-     </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2 class="reveal">Skills</h2>
-
-  <div class="skills-grid">
-
-    <!-- Programming Languages -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
-
-      <div class="skill">
-        <span>Java <span>90%</span></span>
-        <div class="bar"><div style="width: 90%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Kotlin <span>60%</span></span>
-        <div class="bar"><div style="width: 60%"></div></div>
-      </div>
-    </div>
-
-    <!-- Android Development -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-mobile-screen-button"></i> Android Development</h3>
-
-      <div class="skill">
-        <span>Android Studio <span>85%</span></span>
-        <div class="bar"><div style="width: 85%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Android SDK <span>80%</span></span>
-        <div class="bar"><div style="width: 80%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>XML Layouts <span>90%</span></span>
-        <div class="bar"><div style="width: 90%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Jetpack Compose <span>65%</span></span>
-        <div class="bar"><div style="width: 65%"></div></div>
-      </div>
-    </div>
-
-    <!-- Databases & Backend -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-database"></i> Databases & Backend</h3>
-
-      <div class="skill">
-        <span>Room Database <span>85%</span></span>
-        <div class="bar"><div style="width: 85%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>SQLite <span>90%</span></span>
-        <div class="bar"><div style="width: 90%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Firebase <span>80%</span></span>
-        <div class="bar"><div style="width: 80%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>REST API Integration <span>75%</span></span>
-        <div class="bar"><div style="width: 75%"></div></div>
-      </div>
-    </div>
-
-    <!-- Frameworks & Libraries -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-layer-group"></i> Frameworks & Libraries</h3>
-
-      <div class="skill">
-        <span>Android Jetpack <span>75%</span></span>
-        <div class="bar"><div style="width: 75%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Retrofit <span>70%</span></span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Glide <span>85%</span></span>
-        <div class="bar"><div style="width: 65%"></div></div>
-      </div>
-    </div>
-
-    <!-- Tools & Platforms -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
-
-      <div class="skill">
-        <span>Git <span>80%</span></span>
-        <div class="bar"><div style="width: 80%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>GitHub <span>80%</span></span>
-        <div class="bar"><div style="width: 80%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Firebase Authentication <span>70%</span></span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Firebase Firestore <span>70%</span></span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-    </div>
-
-    <!-- Concepts -->
-    <div class="skills-category glass reveal">
-      <h3><i class="fa-solid fa-brain"></i> Concepts</h3>
-
-      <div class="skill">
-        <span>OOP <span>85%</span></span>
-        <div class="bar"><div style="width: 85%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>RESTful APIs <span>75%</span></span>
-        <div class="bar"><div style="width: 75%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>UI/UX Design <span>70%</span></span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>App Lifecycle Management <span>65%</span></span>
-        <div class="bar"><div style="width: 65%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Material Design <span>70%</span></span>
-        <div class="bar"><div style="width: 70%"></div></div>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-
-<!-- PROJECTS-->
-<section id="projects">
-  <h2 class="reveal">Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- PROJECT 1 -->
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-
-        <!-- FRONT -->
-        <div class="project-card glass">
-          <h3 class="project-title">Trackify – Expense Tracker</h3>
-
-          <p class="project-desc">
-            A complete expense management solution designed to track daily income and expenses,
-            visualize spending patterns, and manage budgets efficiently.
-          </p>
-
-          <div class="project-row problem">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p><strong>Problem :</strong> Managing expenses manually without analytics and insights.</p>
-          </div>
-
-          <div class="project-row solution">
-            <i class="fa-solid fa-lightbulb"></i>
-            <p><strong>Solution :</strong> Multi-user expense tracking with charts, reports, and budget monitoring.</p>
-          </div>
-
-          <div class="project-row tech">
-            <i class="fas fa-tools"></i>
-            <p><strong>Tech Stack :</strong> Java, Room Database, XML</p>
-          </div>
-
-          <div class="project-actions">
-            <a href="files/Trackify.apk" class="btn project-btn">
-              <i class="fas fa-download"></i> &nbsp;Download
-            </a>
-            <button class="btn btn-outline" onclick="flipCard(this)">Details</button>
-          </div>
-        </div>
-
-        <!-- BACK -->
-        <div class="project-card glass project-back">
-  <h3 class="project-title">Project Details</h3>
-
-  <p><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 3 Months</p>
-
-  <p><i class="fa-solid fa-book"></i> <strong>Learnings:</strong></p>
-  <ul>
-    <li>Room Database & DAO architecture</li>
-    <li>Multi-user & multi-account handling</li>
-    <li>RecyclerView, charts & analytics</li>
-    <li>Budget management & PDF export</li>
-  </ul>
-
-  <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Challenges:</strong></p>
-  <ul>
-    <li>Handling repeating monthly transactions</li>
-    <li>Synchronizing analytics with filters</li>
-    <li>Managing performance with large datasets</li>
-  </ul>
-
-  <button class="btn btn-outline" onclick="flipCard(this)">← Back</button>
-</div>
-
-      </div>
-    </div>
-
-    <!-- PROJECT 2 -->
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-
-        <!-- FRONT -->
-        <div class="project-card glass">
-          <h3 class="project-title">TrackNote – Notes App</h3>
-
-          <p class="project-desc">
-            A secure and organized note-taking application that allows users to create,
-            search, edit, and sync notes across devices.
-          </p>
-
-          <div class="project-row problem">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p><strong>Problem :</strong> No centralized and secure note-taking system.</p>
-          </div>
-
-          <div class="project-row solution">
-            <i class="fa-solid fa-lightbulb"></i>
-            <p><strong>Solution :</strong> Secure notes with authentication, cloud sync, and search functionality.</p>
-          </div>
-
-          <div class="project-row tech">
-            <i class="fas fa-tools"></i>
-            <p><strong>Tech Stack :</strong> Java, Room Database, XML, Firebase Auth, Firebase Firestore</p>
-          </div>
-
-          <div class="project-actions">
-            <a href="https://github.com/angel-0210/TrackNote/releases/download/v1.0.0/tracknote.apk" class="btn project-btn">
-              <i class="fas fa-download"></i> &nbsp;Download
-            </a>
-            <button class="btn btn-outline" onclick="flipCard(this)">Details</button>
-          </div>
-        </div>
-
-<div class="project-card glass project-back">
-  <h3 class="project-title">Project Details</h3>
-
-  <p><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 1 Month</p>
-
-  <p><i class="fa-solid fa-book"></i> <strong>Learnings:</strong></p>
-  <ul>
-    <li>Room Database CRUD operations</li>
-    <li>Firebase Authentication & Firestore</li>
-    <li>Search & filtering using RecyclerView</li>
-    <li>Session management & data sync</li>
-    <li>CI/CD pipeline using GitHub Actions for automated builds</li>
-  </ul>
-
-  <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Challenges:</strong></p>
-  <ul>
-    <li>Maintaining data consistency between local & cloud</li>
-    <li>Handling secure user sessions</li>
-    <li>Optimizing search performance</li>
-    <li>Configuring automated builds and workflow triggers</li>
-  </ul>
-
-  <button class="btn btn-outline" onclick="flipCard(this)">← Back</button>
-</div>
-
-
-
-      </div>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-
-        <!-- FRONT -->
-        <div class="project-card glass">
-          <h3 class="project-title">WeatherSnap - Weather App</h3>
-
-          <p class="project-desc">
-            A modern Android weather application providing real-time weather updates,
-            location-based forecasts, and a clean, intuitive user experience.
-          </p>
-
-          <div class="project-row problem">
-            <i class="fas fa-exclamation-circle"></i>
-            <p><strong>Problem :</strong> Existing weather apps are cluttered, slow, and often show delayed or inaccurate data.</p>
-          </div>
-
-          <div class="project-row solution">
-            <i class="fas fa-lightbulb"></i>
-            <p><strong>Solution :</strong> WeatherSnap delivers fast, real-time weather data and a minimal UI for better usability.</p>
-          </div>
-
-          <div class="project-row tech">
-            <i class="fas fa-tools"></i>
-            <p><strong>Tech Stack :</strong> Android · Java · REST API · JSON · XML</p>
-          </div>
-
-          <div class="project-actions">
-         
-            <button class="btn btn-outline" onclick="flipCard(this)">Details</button>
-          </div>
-        </div>
-
-       <div class="project-card glass project-back">
-  <h3 class="project-title">Project Details</h3>
-
-  <p><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 3 Days </p>
-
-  <p><i class="fa-solid fa-book"></i> <strong>Learnings:</strong></p>
-  <ul>
-    <li>REST API integration using Retrofit</li>
-    <li>JSON parsing & error handling</li>
-    <li>Location-based data fetching</li>
-    <li>UI optimization for real-time updates</li>
-  </ul>
-
-  <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Challenges:</strong></p>
-  <ul>
-    <li>Handling API rate limits</li>
-    <li>Managing network errors & fallback states</li>
-    <li>Ensuring fast UI updates without lag</li>
-  </ul>
-
-  <button class="btn btn-outline" onclick="flipCard(this)">← Back</button>
-</div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- CAREER -->
-<section id="career">
-  <h2 class="reveal">Career Highlights</h2>
-
-  <div class="two-column">
-    <div class="glass reveal">
-      <h3>Experience</h3>
-<br>
-      <ul class="career-list">
-        <li>Hands-on Android development through real-world projects</li>
-        <li>45 days professional Android training at Excellence Technology</li>
-        <li>Worked with Room, Firebase, MVVM, and REST APIs</li>
-      </ul>
-    </div>
-
-    <div class="glass reveal">
-      <h3>Resume</h3>
-      		<p>
-                    Download my resume to get a complete overview of my
-                    skills, projects, and experience.
-                </p>
-		<br>
-                <a href="files/Angel Gupta Resume.pdf" class="btn" download>
-                    <i class="fas fa-download"></i> &nbsp;Download CV
-                </a>
-     <p class="resume-tech">
- 	 Android • Java • Room • Firebase • REST API • Git & GitHub
-	</p>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates">
-  <h2 class="reveal">Certificates</h2>
-  <div class="cert-grid">
-    <div class="glass reveal cert-card">
-      <i class="fa-solid fa-certificate"></i>
-      <h4>Android Development – 45 Days</h4>
-      <p>Excellence Technology</p>
-    </div>
-    <div class="glass reveal cert-card">
-      <i class="fa-solid fa-certificate"></i>
-      <h4>Java Programming</h4>
-      <p>Let’s Upgrade</p>
-    </div>
-    <div class="glass reveal cert-card">
-      <i class="fa-solid fa-certificate"></i>
-      <h4>Employability Skills – 60 Hours</h4>
-      <p>Infosys</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2 class="reveal">Get In Touch</h2>
-
-  <p class="contact-subheading reveal">
-    I’m open to new opportunities and collaborations.  
-    Feel free to reach out for Android development, internships, or freelance work.
-  </p>
-  <br>
-
-  <div class="contact-grid">
-
-    <div class="glass contact-card reveal">
-      <i class="fa-brands fa-linkedin"></i>
-      
-      <h4>/angel-gupta</h4><br>
-      <p>Connect with me professionally</p><br>
-      <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" target="_blank" class="contact-link">
-        Visit Profile <i class="fa-solid fa-arrow-right"></i>
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Angel Gupta Home">
+        <i class="fa-brands fa-android"></i>
+        <span>Angel Gupta</span>
       </a>
-    </div>
 
-    <div class="glass contact-card reveal">
-      <i class="fa-brands fa-github"></i>
-      <h4>github.com/angel-0210</h4><br>
-      <p>Check my projects & code</p><br>
-      <a href="https://github.com/angel-0210" target="_blank" class="contact-link">
-        View Projects <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="desktop-nav-link">About</a></li>
+          <li><a href="#experience" class="desktop-nav-link">Experience</a></li>
+          <li><a href="#projects" class="desktop-nav-link">Projects</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="desktop-nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">More <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#expertise" class="desktop-nav-link">Expertise</a></li>
+              <li><a href="#casestudies" class="desktop-nav-link">Case Studies</a></li>
+              <li><a href="#process" class="desktop-nav-link">Workflow</a></li>
+              <li><a href="#timeline" class="desktop-nav-link">Timeline</a></li>
+              <li><a href="#github" class="desktop-nav-link">Code Portfolio</a></li>
+              <li><a href="#opportunities" class="desktop-nav-link">Opportunities</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="desktop-nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-    <div class="glass contact-card reveal">
-      <i class="fa-solid fa-envelope"></i>
-      <h4>angelgupta.dev@gmail.com</h4><br>
-      <p>Send me a message</p><br>
-      <a href="mailto:angelgupta.dev@gmail.com" class="contact-link">
-        Send Email <i class="fa-solid fa-arrow-right"></i>
-      </a>
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light and Dark Mode Theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn btn-secondary" style="display: none; padding: 8px 16px; font-size: 0.8rem;" id="navContactCta">Contact</a>
+        <button class="hamburger" id="hamburgerMenuBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
+  </header>
 
+  <!-- Mobile Navigation Tray -->
+  <div class="mobile-nav-tray" id="mobileNavTray" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#expertise" class="mobile-nav-link">Expertise</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#casestudies" class="mobile-nav-link">Case Studies</a>
+    <a href="#process" class="mobile-nav-link">Workflow</a>
+    <a href="#timeline" class="mobile-nav-link">Timeline</a>
+    <a href="#github" class="mobile-nav-link">Code Portfolio</a>
+    <a href="#opportunities" class="mobile-nav-link">Opportunities</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
   </div>
-</section>
 
-<footer class="footer">
-  <div class="footer-container">
+  <!-- Main Container -->
+  <main id="main-content">
 
-    <div class="footer-brand">
-      <h3>Angel Gupta</h3>
-      <p>Android Developer | UI/UX Enthusiast</p>
-    </div>
+    <!-- 1. HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-brands fa-android"></i>
+            <span>ANDROID SPECIALIST</span>
+          </div>
+          <h1>Crafting Premium <span class="text-gradient">Mobile Experiences</span></h1>
+          <p class="hero-desc">
+            I build scalable Android apps with clean architecture, smooth UI, and real-world features. I focus on performance, UX, and maintainable code. Currently learning advanced API handling, cloud sync features, and improving app performance.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="files/Angel Gupta Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-invoice"></i> View Resume</a>
+            <a href="files/Angel Gupta Resume.pdf" class="btn btn-secondary" download><i class="fa-solid fa-download"></i> Download Resume</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:angelgupta.dev@gmail.com" aria-label="Email Angel"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-art-container">
+          <div class="hero-art">
+            <div class="hero-art-ring r1" aria-hidden="true"></div>
+            <div class="hero-art-ring r2" aria-hidden="true"></div>
+            <i class="fa-brands fa-android hero-art-icon" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>My evolution from writing code to engineering user-centric products.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Career Objective</h3>
+            <p style="margin-top: 12px; margin-bottom: 20px; font-style: italic; border-left: 3px solid var(--android-green); padding-left: 12px;">
+              Aspiring Android Developer seeking to leverage professional internship experience at ThinkNEXT Technologies Pvt. Ltd., strong fundamentals in Kotlin, Java, Room Database, SQLite caching layer patterns, and RESTful APIs to build premium, immersive, offline-first mobile products.
+            </p>
+            <h3>Development Philosophy</h3>
+            <p style="margin-top: 12px; margin-bottom: 20px;">
+              I believe mobile applications are the primary touchpoints for modern services. My mission is to build robust, performant apps that work flawlessly offline, manage data sync securely, and prioritize smooth screen experiences.
+            </p>
+            <p>
+              I leverage MVVM architecture, Room database caching layer patterns, and structured Retrofit API links to isolate components and ensure robust maintainable engineering.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Evolution Framework</h3>
+            <div class="progression-roadmap">
+              <div class="progression-step">
+                <span class="step-number">01</span>
+                <div class="step-details">
+                  <h4>Developer</h4>
+                  <p>Mastering standard OOP languages, Kotlin, Java, and platform API bounds.</p>
+                </div>
+              </div>
+              <div class="progression-step">
+                <span class="step-number">02</span>
+                <div class="step-details">
+                  <h4>Problem Solver</h4>
+                  <p>Resolving complex challenges like local database synchronization and layout scalability.</p>
+                </div>
+              </div>
+              <div class="progression-step">
+                <span class="step-number">03</span>
+                <div class="step-details">
+                  <h4>Product Builder</h4>
+                  <p>Integrating analytics, budgets, secure session validation, and responsive mobile architecture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
-    <div class="footer-connect">
-      <h4>Connect</h4>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/angel-0210" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Professional Experience</h2>
+          <p>My career path and practical developer internship achievements.</p>
+        </div>
+        <div class="experience-timeline">
+          <article class="experience-card">
+            <div class="experience-header">
+              <div class="experience-title-area">
+                <h3>Android Developer Intern</h3>
+                <div class="company-name">
+                  <i class="fa-solid fa-building"></i>
+                  <span>ThinkNEXT Technologies Pvt. Ltd.</span>
+                </div>
+              </div>
+              <div class="experience-badge-area">
+                <span class="badge badge-duration"><i class="fa-solid fa-calendar-days"></i> 5 Months</span>
+                <span class="badge"><i class="fa-solid fa-award"></i> Internship</span>
+              </div>
+            </div>
+            <div class="experience-body">
+              <h4>Role Overview</h4>
+              <p style="margin-bottom: 20px;">
+                Worked as an Android Developer Intern focusing on the full mobile lifecycle. Developed features, built responsive UI elements, integrated local databases and cloud platforms, conducted tests, debugged, and optimized applications to deliver premium performance.
+              </p>
+              <h4>Key Responsibilities & Achievements</h4>
+              <ul class="experience-list">
+                <li>Developed Android application features using Java/Kotlin.</li>
+                <li>Implemented responsive user interfaces following Material Design principles.</li>
+                <li>Integrated APIs and backend services.</li>
+                <li>Worked with local and cloud databases.</li>
+                <li>Collaborated on debugging, testing, and application optimization.</li>
+                <li>Participated in feature planning and implementation.</li>
+                <li>Improved user experience and application performance.</li>
+              </ul>
+              <div class="experience-skills">
+                <h4>Skills Gained & Applied</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Android SDK</span>
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">Kotlin</span>
+                  <span class="skill-tag">Firebase</span>
+                  <span class="skill-tag">SQLite</span>
+                  <span class="skill-tag">Room Database</span>
+                  <span class="skill-tag">REST APIs</span>
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Android Studio</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL EXPERTISE -->
+    <section id="expertise">
+      <div class="container">
+        <div class="section-title">
+          <h2>Technical Expertise</h2>
+          <p>Robust developer tools and frameworks built for scale.</p>
+        </div>
+        <div class="skills-grid">
+          
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Java (90%)</span>
+              <span class="skill-tag">Kotlin (60%)</span>
+              <span class="skill-tag">OOP Fundamentals</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h3>Android SDK</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Android Studio (85%)</span>
+              <span class="skill-tag">Android SDK (80%)</span>
+              <span class="skill-tag">XML Layouts (90%)</span>
+              <span class="skill-tag">Jetpack Compose (65%)</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Storage & Offline</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Room Database (85%)</span>
+              <span class="skill-tag">SQLite (90%)</span>
+              <span class="skill-tag">Offline Caching</span>
+              <span class="skill-tag">Repository Pattern</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Firebase Services</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Firebase Auth (70%)</span>
+              <span class="skill-tag">Cloud Firestore (70%)</span>
+              <span class="skill-tag">Realtime Sync (80%)</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>Networking & APIs</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Retrofit Client (70%)</span>
+              <span class="skill-tag">RESTful APIs Integration</span>
+              <span class="skill-tag">JSON Parsing</span>
+              <span class="skill-tag">Glide Image loader</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Tools & Control</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git Version Control</span>
+              <span class="skill-tag">GitHub API</span>
+              <span class="skill-tag">GitHub Actions CI/CD</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS -->
+    <section id="projects" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <p>Production-ready applications demonstrating technical excellence.</p>
+        </div>
+        <div class="projects-grid">
+          
+          <!-- Project 1: Trackify -->
+          <article class="project-card">
+            <div class="project-banner">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div class="project-body">
+              <h3>Trackify – Expense Tracker</h3>
+              <p class="project-desc">
+                A complete expense management solution designed to track daily income and expenses, visualize spending patterns, and manage budgets efficiently.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">Room Database</span>
+                <span class="tech-badge">XML Layouts</span>
+                <span class="tech-badge">DAO Pattern</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="files/Trackify.apk" class="project-link primary" download><i class="fa-solid fa-download"></i> Download APK</a>
+              <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i class="fa-brands fa-github"></i> Source Code</a>
+            </div>
+          </article>
+
+          <!-- Project 2: TrackNote -->
+          <article class="project-card">
+            <div class="project-banner" style="background: linear-gradient(135deg, var(--bg-secondary), #162a1c);">
+              <i class="fa-solid fa-note-sticky" style="color: #4CD137;"></i>
+            </div>
+            <div class="project-body">
+              <h3>TrackNote – Notes App</h3>
+              <p class="project-desc">
+                A secure and organized note-taking application that allows users to create, search, edit, and sync notes across devices.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">Firebase Firestore</span>
+                <span class="tech-badge">Firebase Auth</span>
+                <span class="tech-badge">GitHub Actions</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/angel-0210/TrackNote/releases/download/v1.0.0/tracknote.apk" class="project-link primary" download><i class="fa-solid fa-download"></i> Download APK</a>
+              <a href="https://github.com/angel-0210/TrackNote" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i class="fa-brands fa-github"></i> Source Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CASE STUDY SECTION -->
+    <section id="casestudies">
+      <div class="container">
+        <div class="section-title">
+          <h2>Product Case Studies</h2>
+          <p>Analyzing product challenges, technical research, and production results.</p>
+        </div>
+        <div class="case-studies-container">
+          
+          <!-- Case Study 1: Trackify -->
+          <div class="case-study-card">
+            <div class="case-study-header">
+              <h3>Trackify Architecture Study</h3>
+              <span>3-Month Case Study</span>
+            </div>
+            <div class="case-study-tabs">
+              <div class="cs-tab">
+                <h4>Challenge</h4>
+                <p>Managing income/expenses manually without local visual tracking, leading to user drop-offs due to complex steps.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Research</h4>
+                <p>Analyzing Room database schemas, structuring DAO database entities, and optimizing RecyclerView performance grids.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Solution</h4>
+                <p>Developed multi-user expense profiles with localized database filters, charts representations, and exportable PDF budgets.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Results</h4>
+                <p>Built a completely offline-capable application cycle, reducing latency in report generation to zero milliseconds.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2: TrackNote -->
+          <div class="case-study-card">
+            <div class="case-study-header">
+              <h3>TrackNote Synchronization Study</h3>
+              <span>1-Month Case Study</span>
+            </div>
+            <div class="case-study-tabs">
+              <div class="cs-tab">
+                <h4>Challenge</h4>
+                <p>Preventing data loss when users switch between local note drafting and cloud session storage.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Research</h4>
+                <p>Studied Firebase cache behaviors and session synchronization queues to prevent parallel write override conflicts.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Solution</h4>
+                <p>Built a repository layer connecting local Room caching with remote Firebase database hooks and secure OAuth.</p>
+              </div>
+              <div class="cs-tab">
+                <h4>Results</h4>
+                <p>Achieved seamless offline drafting with automated background cloud uploads, and structured CI/CD pipelines via Actions.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ANDROID DEVELOPMENT PROCESS -->
+    <section id="process" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Engineering Process</h2>
+          <p>My structured approach to developing robust Android products.</p>
+        </div>
+        <div class="process-flow">
+          <div class="process-step">
+            <i class="fa-solid fa-magnifying-glass process-step-icon"></i>
+            <h4>1. Research</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-list-check process-step-icon"></i>
+            <h4>2. Planning</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-compass-drafting process-step-icon"></i>
+            <h4>3. UI Design</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-sitemap process-step-icon"></i>
+            <h4>4. Architecture</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-laptop-code process-step-icon"></i>
+            <h4>5. Development</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-vial-virus process-step-icon"></i>
+            <h4>6. Testing</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-cloud-arrow-up process-step-icon"></i>
+            <h4>7. Deployment</h4>
+          </div>
+          <div class="process-step">
+            <i class="fa-solid fa-screwdriver-wrench process-step-icon"></i>
+            <h4>8. Support</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ACHIEVEMENTS & HIGHLIGHTS -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-title">
+          <h2>Achievements & Verification</h2>
+          <p>Verified professional certifications and product milestones.</p>
+        </div>
+        <div class="metrics-grid">
+          
+          <div class="metric-card">
+            <div class="metric-value">45</div>
+            <div class="metric-label">Days Android Training</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Offline Capability Target</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">60</div>
+            <div class="metric-label">Hours Employability Skill</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">3+</div>
+            <div class="metric-label">Production App Releases</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. EXPERIENCE TIMELINE -->
+    <section id="timeline" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Growth Timeline</h2>
+          <p>My career path, training credentials, and tech stack learning curves.</p>
+        </div>
+        <div class="timeline-container">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Mid 2026</div>
+            <div class="timeline-content">
+              <h3>Trackify App Deployment</h3>
+              <p>Designed room databases schema models, generated visual dashboard modules, and optimized local analytics caches.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Early 2026</div>
+            <div class="timeline-content">
+              <h3>TrackNote App Launch</h3>
+              <p>Integrated Firebase authentication and cloud Firestore synchronization caches alongside offline-first repository models.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Late 2025</div>
+            <div class="timeline-content">
+              <h3>Excellence Technology Training</h3>
+              <p>Completed 45 days professional Android training program covering Android lifecycle APIs, view frameworks, and SQLite structures.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Development Services</h2>
+          <p>Tailored development services aimed at producing top-tier mobile software.</p>
+        </div>
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Android App Development</h3>
+            <p>Writing highly performant, custom applications using Kotlin/Java, Room database caches, and Retrofit network controllers.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+            <h3>API & Backend Integration</h3>
+            <p>Integrating secure RESTful endpoints using Retrofit and JSON parsers to maintain responsive, live application states.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3>Firebase Integration</h3>
+            <p>Enabling secure remote session logins, real-time database cloud sync, and structured session states management.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>Material UI/UX Implementation</h3>
+            <p>Implementing modern Material Design 3 guidelines to establish fluid visual transitions, dark-theme panels, and responsive widgets.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>App Performance Optimization</h3>
+            <p>Profiling memory leaks, managing garbage collection constraints, and building SQLite caches to increase response metrics.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Maintenance & Support</h3>
+            <p>Debugging codebase integrations, upgrading SDK levels, maintaining repository structures, and managing CI/CD actions.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. TESTIMONIALS
+    <section id="testimonials" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Professional Recommendations</h2>
+          <p>Feedback from peers, instructors, and collaborators on work ethic and output.</p>
+        </div>
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Angel demonstrates an excellent understanding of core Android components and architecture. The way TrackNote syncs offline data seamlessly showcases strong engineering capabilities."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">ET</div>
+              <div class="author-info">
+                <h4>Training Lead</h4>
+                <p>Excellence Technology</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Trackify represents a highly practical production application. The database structures are optimized and the PDF reports are generated with zero layout clipping."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AG</div>
+              <div class="author-info">
+                <h4>Project Reviewer</h4>
+                <p>Android Developer Guild</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- 11. GITHUB SHOWCASE SECTION -->
+    <section id="github">
+      <div class="container">
+        <div class="section-title">
+          <h2>GitHub & Code Portfolio</h2>
+          <p>Highlighting code architecture, daily development commits, and developer footprint.</p>
+        </div>
+        <div class="os-grid">
+          <div class="os-card">
+            <h3>Featured Code Repositories</h3>
+            <div class="os-repos">
+              <a href="https://github.com/angel-0210/TrackNote" target="_blank" rel="noopener noreferrer" class="os-repo-item">
+                <div class="repo-details">
+                  <h4>TrackNote Main Release</h4>
+                  <p>Secure notes application showcasing Room local SQLite caching, Firebase cloud sync architectures, and structured MVVM Kotlin code patterns.</p>
+                  <div style="margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap;">
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">Kotlin</span>
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">Firebase</span>
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">MVVM</span>
+                  </div>
+                </div>
+                <span class="repo-stars" style="white-space: nowrap;"><i class="fa-solid fa-star"></i> Featured</span>
+              </a>
+              <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer" class="os-repo-item">
+                <div class="repo-details">
+                  <h4>Trackify Expense Modules</h4>
+                  <p>Modular localized database handlers utilizing Android DAO schemas, clean architecture models, and XML visual dashboards.</p>
+                  <div style="margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap;">
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">Java</span>
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">Room DB</span>
+                    <span class="tech-badge" style="font-size: 0.65rem; padding: 2px 6px;">XML Layouts</span>
+                  </div>
+                </div>
+                <span class="repo-stars" style="white-space: nowrap;"><i class="fa-solid fa-star"></i> Core</span>
+              </a>
+            </div>
+          </div>
+          <div class="os-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <i class="fa-brands fa-github" style="font-size: 4rem; color: var(--android-green); margin-bottom: 16px;"></i>
+            <h3>GitHub Stats & Activity</h3>
+            <p style="margin-top: 8px; max-width: 300px; font-size: 0.9rem;">
+              Daily development commits showcasing clean git logs, package branch configurations, and mobile tool integrations.
+            </p>
+            <div style="display: flex; gap: 12px; margin-top: 16px; margin-bottom: 20px; font-family: var(--font-mono); font-size: 0.8rem;">
+              <div><strong>10+</strong> Repos</div>
+              <div>•</div>
+              <div><strong>Kotlin/Java</strong> Dominant</div>
+              <div>•</div>
+              <div><strong>CI/CD</strong> Verified</div>
+            </div>
+            <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top: 8px;"><i class="fa-brands fa-github"></i> Visit Profile Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11.5. OPEN FOR OPPORTUNITIES SECTION -->
+    <section id="opportunities" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Open for Opportunities</h2>
+          <p>Let's collaborate on production features, custom mobile products, or full-time engagements.</p>
+        </div>
+        <div class="opportunities-grid">
+          
+          <div class="opportunity-card">
+            <div class="opp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Freelance Projects</h3>
+            <p>Available for targeted mobile development contracts, hourly consulting, and modular custom applications:</p>
+            <ul class="opp-list">
+              <li>Android App Development</li>
+              <li>Android UI Implementation</li>
+              <li>Firebase Integration</li>
+              <li>API & JSON Integration</li>
+              <li>Room Database Setup</li>
+              <li>App Speed & Size Optimization</li>
+              <li>Bug Fixing & Support</li>
+            </ul>
+          </div>
+
+          <div class="opportunity-card">
+            <div class="opp-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <h3>Open Source & Teams</h3>
+            <p>Excited to collaborate with development teams, contribute to platform codebases, and participate in project builds:</p>
+            <ul class="opp-list">
+              <li>Contributing to open-source Android projects</li>
+              <li>Collaborating on shared GitHub repositories</li>
+              <li>Participating in local developer groups</li>
+              <li>Learning alongside senior engineering teams</li>
+            </ul>
+          </div>
+
+          <div class="opportunity-card highlight">
+            <div class="opp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Internships & Full-Time</h3>
+            <p class="highlight-lead">
+              Open to Android Development internships, freelance engagements, contract work, and full-time opportunities where I can contribute to impactful mobile products.
+            </p>
+            <p class="highlight-sub">
+              Ready to adapt quickly to corporate architecture patterns, Agile sprints, product design guidelines, and code validation processes.
+            </p>
+            <div class="opp-actions">
+              <a href="#contact" class="btn"><i class="fa-solid fa-envelope"></i> Hire Me</a>
+              <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Let's Collaborate</a>
+              <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-comments"></i> Contact Me</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. CONTACT SECTION -->
+    <section id="contact" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>Let's discuss opportunities, internships, and build projects together.</p>
+        </div>
+        <div class="contact-grid">
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="mailto:angelgupta.dev@gmail.com">angelgupta.dev@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="contact-text">
+                <h4>LinkedIn Profile</h4>
+                <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" target="_blank" rel="noopener noreferrer">angel-gupta</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer">angel-0210</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="portfolioContactForm">
+              <div class="form-group">
+                <label for="formName">Name</label>
+                <input type="text" id="formName" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="your.email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-input" placeholder="Your transmission detail..." required></textarea>
+              </div>
+              <button type="submit" class="btn" style="width: 100%;">Transmit Message <i class="fa-solid fa-paper-plane"></i></button>
+              <div id="formFeedback" style="display: none; margin-top: 14px; font-weight: 600; text-align: center; color: var(--android-green);"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Angel Gupta. All rights reserved.</p>
+      <div class="hero-socials" style="margin-top: 8px;">
+        <a href="https://github.com/angel-0210" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/angel-gupta-2042b8397" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:angelgupta.dev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
+  </footer>
 
-  </div>
-
-  <div class="footer-line"></div>
-
-  <p class="footer-copyright">
-    © 2026 Angel Gupta. All rights reserved.
-  </p>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="script.js"></script>
+  <!-- Script Modules -->
+  <script src="script.js"></script>
 </body>
 </html>
